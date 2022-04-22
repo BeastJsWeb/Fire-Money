@@ -1,0 +1,25 @@
+div {
+  flex-direction: row;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  @extend .burger--icon;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    flex-grow: 0;
+    order: 1;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  button {
+    font-size: calc(var(--index) * .1 + 0.65em);
+    margin: 0 1em;
+    @media (max-width: 600px) {
+      margin: 0 10px;
+    }
+  }
+}

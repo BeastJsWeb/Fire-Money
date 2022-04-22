@@ -1,0 +1,53 @@
+.credit__progressBar {
+  span {
+    font-size: calc(var(--index) * .1 + 1em);
+    font-weight: 700;
+    color: #45515F;
+    background: transparent;
+  }
+  
+  div {
+    height: 7px;
+    border-radius: 8px;
+    width: 100%;
+    display: inline-flex;
+    align-items:center;
+
+    :nth-child(1) {
+      background: linear-gradient(81.55deg, #FFC83E 33.93%, #FF9F47 73.78%);
+      margin-right: -10px;
+    }
+    //circle
+    :nth-child(2) {
+      background-color: #FFA147;
+      min-height: 20px;
+      min-width: 20px;
+      border-radius: 100%;
+      z-index: 1;
+      //arrows
+      span {
+        display: inline-block;
+        min-width: 5px;
+        min-height: 5px;
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        margin: 2px 0;
+        background: transparent;
+        border-radius: 0;
+      }
+      //arrow L
+      :nth-child(1) {
+        transform: rotate(-135deg);
+      }
+      //arrow R
+      :nth-child(2) {
+        transform: rotate(45deg);
+      }
+    }
+
+    :nth-child(3) {
+      background-color: #ECECEC;
+      margin-left: -10px;
+    }
+  }
+}

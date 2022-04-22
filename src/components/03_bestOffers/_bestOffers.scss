@@ -1,0 +1,29 @@
+@import '../00_app/mixin.scss';
+
+#bestOffers {
+  @include section;
+
+  >:nth-child(1) {
+    @include boxStretch;
+    border-bottom: 1px solid #e0e2e6;
+
+    #bestOffers__title {
+      @include title;
+    }
+  
+    #bestOffers__list {
+      @include section__list(15px 30px);
+      
+      @import './list__item.scss';
+
+    }
+
+    #bestOffers__info {
+      font-size: 13px;
+      font-weight: 300;
+      align-self:center;
+      margin: 40px 0;
+      padding-bottom: 15px;
+    }
+  }
+}

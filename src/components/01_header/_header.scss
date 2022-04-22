@@ -1,0 +1,44 @@
+@import '../00_app/mixin.scss';
+@import './burger__icon.scss';
+@import './nav--onClick.scss';
+
+header {
+  margin: 1em 0;
+  & * {
+    transition: 0.5s, opacity 0.1s;
+  }
+  @media (max-width: 340px) {
+    min-height: 60px;
+  }
+  
+  input {
+    display: none;
+
+    @media (max-width: 720px) {
+      display: block;
+      position: absolute;
+      margin-top: 1.9vh;
+      margin-left: 91vw;
+      opacity: 0;
+      transform:scale(3.3);
+      z-index: 1;
+    }
+  }
+
+  .header__menu {
+    @include box;
+    align-items:center;
+    justify-content: space-between;
+
+    button {
+      @include btnMenu;
+    }
+
+    @import './header__logo.scss';
+    
+    @import './nav--list.scss';
+
+    @import './btn__LogIn.scss';
+  }
+}
+

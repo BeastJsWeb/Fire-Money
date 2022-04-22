@@ -1,0 +1,48 @@
+@mixin box {
+  width: calc(1em * 44 + 30vw );
+  display: flex;
+  
+  @media (max-width: 1024px) {
+    width: calc((0.03em + 4.1vw) * 23 );
+  }
+}
+
+@mixin boxStretch {
+  @include box;
+
+  margin: auto;
+  flex-direction: column;
+}
+
+@mixin btnMenu {
+  background: transparent;
+  font-weight: 500;
+  padding: 1.1%;
+}
+
+@mixin title {
+  align-self:center;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+@mixin section {
+  background-color: #F6F9FC;
+  align-self:stretch;
+  padding-top: 20px;
+  text-align: center;
+}
+
+@mixin section__list($gap: gap) {
+  display: flex;
+  flex-grow: 1;
+  gap: $gap;
+  border-radius: 22px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

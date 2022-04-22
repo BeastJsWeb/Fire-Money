@@ -1,0 +1,10 @@
+.global__btn--onForm {
+  margin: 30px auto;
+  display: block;
+  font-size: calc(var(--index) * .1 + 0.65em);
+  font-weight: 700;
+  background: linear-gradient(81.55deg, #FFC83E 33.93%, #FF7347 73.78%);
+  border-radius: 8px;
+  width: 275px;
+  height: 65px;
+}

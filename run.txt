@@ -1,0 +1,34 @@
+cd my-app
+npm start
+
+gh-pages -d build  /   To create a production build, use npm run build.
+
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+  for load local serve delete from .json:
+
+    "homepage": "https://beastjsweb.github.io/react-react-bootstrap-5/build",
+
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+
+npm: {
+  0 Убрать ошибки
+  Запустите: npm install npm@latest -g
+
+  1 Проверить пакеты, необъявленные в package.json
+  Запустите: npm prune,
+
+  2 Проверить пакет на устаревшие зависимости
+  Запустите: npm outdated
+},
+
+git: {
+  git ckeckout 'commit name' - переключиться между коммитами
+  got log - список коммитов
+}

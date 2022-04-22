@@ -1,0 +1,12 @@
+#btn__logIn {
+  background-color: #FF7B00;
+  border-radius: 8px;
+  padding: calc(1em + 0.2vw) calc(1.5em + 0.2vw);
+  display: flex;
+
+  @media (max-width: 800px) {
+    span {
+      display: none;
+    }
+  }
+}
