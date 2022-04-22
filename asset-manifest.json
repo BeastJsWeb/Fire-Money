@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Fire-Money/static/css/main.3fce7b7b.css",
+    "main.js": "/Fire-Money/static/js/main.c6bf11a6.js",
+    "static/media/01.webp": "/Fire-Money/static/media/01.d3a8fb73ad9458e5b42c.webp",
+    "static/media/02.webp": "/Fire-Money/static/media/02.491f045dd180c1a74295.webp",
+    "static/media/01-768.webp": "/Fire-Money/static/media/01-768.4e23da87166721637e6d.webp",
+    "static/media/01-360.webp": "/Fire-Money/static/media/01-360.1c18852cfe1e64a03909.webp",
+    "static/media/Rubik-Medium.woff2": "/Fire-Money/static/media/Rubik-Medium.ad5e7a9b977a13d924e7.woff2",
+    "static/media/Rubik-SemiBold.woff2": "/Fire-Money/static/media/Rubik-SemiBold.bc0f097a4db20740644f.woff2",
+    "static/media/Rubik-Bold.woff2": "/Fire-Money/static/media/Rubik-Bold.20378ec51911ae9640e2.woff2",
+    "static/media/Rubik-Regular.woff2": "/Fire-Money/static/media/Rubik-Regular.62b057003f92f77765e4.woff2",
+    "static/media/Rubik-Light.woff2": "/Fire-Money/static/media/Rubik-Light.68954a635bf5a1e05f8a.woff2",
+    "static/media/03.svg": "/Fire-Money/static/media/03.28c472bf3809f3e3e81426c7fd53e8d0.svg",
+    "static/media/04.svg": "/Fire-Money/static/media/04.20b518aaa234263d7402f22af1e04cf8.svg",
+    "static/media/02.svg": "/Fire-Money/static/media/02.c7cffbabaa6b33c5a7a328ef9d3a9f49.svg",
+    "static/media/01.svg": "/Fire-Money/static/media/01.5a65502046baacaf29e59ed3a393f60e.svg",
+    "static/media/03.webp": "/Fire-Money/static/media/03.4d373d0ceb1fce872b81.webp",
+    "index.html": "/Fire-Money/index.html",
+    "main.3fce7b7b.css.map": "/Fire-Money/static/css/main.3fce7b7b.css.map",
+    "main.c6bf11a6.js.map": "/Fire-Money/static/js/main.c6bf11a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fce7b7b.css",
+    "static/js/main.c6bf11a6.js"
+  ]
+}
