@@ -19,11 +19,9 @@
     }
 
     #bestOffers__info {
-      font-size: 13px;
-      font-weight: 300;
-      align-self:center;
+      @include info;
       margin: 40px 0;
-      padding-bottom: 15px;
+      
     }
   }
 }

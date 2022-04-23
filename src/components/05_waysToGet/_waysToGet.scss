@@ -1,0 +1,21 @@
+@import '../00_app/mixin.scss';
+
+#WaysToGet {
+  @include section(white);
+
+  >:nth-child(1) {
+    @include boxStretch;
+
+    #WaysToGet__title {
+      @include title;
+    }
+    
+    #WaysToGet__info {
+      @include info;
+      margin-bottom: 30px;
+      margin-top: -10px;
+    }
+
+    @import './WaysToGet__list.scss';
+  }
+}

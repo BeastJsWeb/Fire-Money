@@ -1,0 +1,45 @@
+.reviews__review {
+  @include section__itemList;
+  box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.02);
+  flex-direction: column;
+  align-items:flex-start;
+  text-align: left;
+  padding: 40px;
+  gap: 15px;
+  margin: 30px 15px;
+  height: 490px;
+
+  @media (max-width: 1025px) {
+    margin: 7px 7px;
+    padding: 30px;
+  }
+
+  >:nth-child(1) {
+    border-radius: 100%;
+  }
+
+  >:nth-child(2) {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  >:nth-child(3) {
+    display: flex;
+    span {
+      font-size: 15px;
+      color: #93A0AB;
+      margin: 0 10px;
+      }
+  }
+
+  >:nth-child(4) {
+    color: #93A0AB;
+    line-height: 19px;
+    overflow: auto;
+    padding-right: 15px;
+  }
+
+  >:nth-child(5) {
+    margin: 10px 0;
+  }
+}

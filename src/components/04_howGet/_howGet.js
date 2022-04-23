@@ -21,18 +21,18 @@ export default function HowGet() {
         <div id='howGet__title'>Как получить деньги</div>
 
         <div className='howGet__steps'>
-          <div>
+          <div id='steps__icons'>
             {steps.map(({Step, label}, i) => (
               <div key={label} >
-                <Step className='step__icon' width={65} height={65} />
+                <Step className='icons__item' width={65} height={65} />
                 <button>{i + 1}</button>
               </div>
             ))}
           </div>
 
-          <div id='step__progressBar'></div>
+          <div id='steps__progressBar'></div>
 
-          <div id='step__label'>
+          <div id='steps__label'>
             {steps.map(({label}) => (
               <div key={label} >{label}</div>
             ))}

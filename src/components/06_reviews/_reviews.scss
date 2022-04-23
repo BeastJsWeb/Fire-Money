@@ -1,0 +1,29 @@
+@import '../00_app/mixin.scss';
+
+#reviews {
+  @include section;
+
+  >:nth-child(1) {
+    @include boxStretch;
+    flex-shrink: 1;
+
+    #reviews__title {
+      @include title;
+      margin-bottom: 10px;
+    }
+  
+    >:nth-child(2) {
+      margin: 0 -15px;
+
+    @media (max-width: 1440px) {
+      margin: 0;
+    }
+
+    @import '../06_reviews/reviews__review.scss'  ;
+    }
+
+    :nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}

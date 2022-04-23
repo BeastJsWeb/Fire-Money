@@ -1,0 +1,27 @@
+#steps__label {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    gap: 70px;
+    margin-left: 32px;
+  }
+  
+  >div {
+    width: 25%;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 1vw;
+
+    @media (max-width: 550px) {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      width: auto;
+      height: 25%;
+      margin-top: 0;
+    }
+  }
+}
