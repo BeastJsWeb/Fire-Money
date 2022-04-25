@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/Fire-Money/static/css/main.ef151016.css",
-    "main.js": "/Fire-Money/static/js/main.e5f121bd.js",
+    "main.css": "/Fire-Money/static/css/main.6f31ab47.css",
+    "main.js": "/Fire-Money/static/js/main.44e03aa0.js",
+    "static/media/01.jpg": "/Fire-Money/static/media/01.0903bdb9195160f42fa7.jpg",
     "static/media/01.webp": "/Fire-Money/static/media/01.a156669528df94008951.webp",
     "static/media/02.webp": "/Fire-Money/static/media/02.1790b63f46f058a956c5.webp",
     "static/media/01-768.webp": "/Fire-Money/static/media/01-768.4e23da87166721637e6d.webp",
     "static/media/01-360.webp": "/Fire-Money/static/media/01-360.1c18852cfe1e64a03909.webp",
+    "static/media/01ie.jpg": "/Fire-Money/static/media/01ie.8c69a4832c0bb0249d38.jpg",
     "static/media/Rubik-Medium.woff2": "/Fire-Money/static/media/Rubik-Medium.ad5e7a9b977a13d924e7.woff2",
     "static/media/Rubik-SemiBold.woff2": "/Fire-Money/static/media/Rubik-SemiBold.bc0f097a4db20740644f.woff2",
     "static/media/Rubik-Bold.woff2": "/Fire-Money/static/media/Rubik-Bold.20378ec51911ae9640e2.woff2",
     "static/media/Rubik-Regular.woff2": "/Fire-Money/static/media/Rubik-Regular.62b057003f92f77765e4.woff2",
     "static/media/Rubik-Light.woff2": "/Fire-Money/static/media/Rubik-Light.68954a635bf5a1e05f8a.woff2",
-    "static/media/03.svg": "/Fire-Money/static/media/03.28c472bf3809f3e3e81426c7fd53e8d0.svg",
+    "static/media/01tab.webp": "/Fire-Money/static/media/01tab.ddf4294fca728cbabdac.webp",
+    "static/media/01mob.webp": "/Fire-Money/static/media/01mob.edbc583d6bf3bf34eeb4.webp",
+    "static/media/03.svg": "/Fire-Money/static/media/03.9e98d028405f20f9a78f5006a875bfba.svg",
     "static/media/05-5.svg": "/Fire-Money/static/media/05-5.5147d1f263d64eaf95c72b9ef0c87afe.svg",
-    "static/media/04.svg": "/Fire-Money/static/media/04.3c93aefe85e6139f9cfa7e55fc47e921.svg",
-    "static/media/02.svg": "/Fire-Money/static/media/02.c7cffbabaa6b33c5a7a328ef9d3a9f49.svg",
+    "static/media/04.svg": "/Fire-Money/static/media/04.c3fb8563b3f08067847056132daa5c8a.svg",
+    "static/media/02.svg": "/Fire-Money/static/media/02.fa8f0d2f9d1a6297469b7ec7a7ef1857.svg",
     "static/media/05-4.svg": "/Fire-Money/static/media/05-4.3d3634728ac02c01d5904b6226c1a6dc.svg",
     "static/media/01.svg": "/Fire-Money/static/media/01.5a65502046baacaf29e59ed3a393f60e.svg",
     "static/media/slick.svg": "/Fire-Money/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -25,11 +29,12 @@
     "static/media/04.webp": "/Fire-Money/static/media/04.985025699ea39f9c6150.webp",
     "index.html": "/Fire-Money/index.html",
     "static/media/05.webp": "/Fire-Money/static/media/05.c4716caa4af5fd4e2e10.webp",
-    "main.ef151016.css.map": "/Fire-Money/static/css/main.ef151016.css.map",
-    "main.e5f121bd.js.map": "/Fire-Money/static/js/main.e5f121bd.js.map"
+    "static/media/01preload.webp": "/Fire-Money/static/media/01preload.3566c78f608c87033d9a.webp",
+    "main.6f31ab47.css.map": "/Fire-Money/static/css/main.6f31ab47.css.map",
+    "main.44e03aa0.js.map": "/Fire-Money/static/js/main.44e03aa0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef151016.css",
-    "static/js/main.e5f121bd.js"
+    "static/css/main.6f31ab47.css",
+    "static/js/main.44e03aa0.js"
   ]
 }
