@@ -3,6 +3,7 @@ import React from 'react'
 export default function Review(
   {photo, name, city, review, icon, vote}
   ) {
+    //console.log(typeof photo)
   return (
     <div className='reviews__review'>
       <img src={photo} width={100} height={100} alt={name} />

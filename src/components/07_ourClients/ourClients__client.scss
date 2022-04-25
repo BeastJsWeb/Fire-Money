@@ -1,0 +1,37 @@
+.ourClients__client {
+  @include section__itemList;
+  
+  align-items:flex-start;
+  text-align: left;
+  padding: 30px;
+  gap: 25px;
+  margin: 5px 15px;
+  align-items:center;
+
+  @media (max-width: 1025px) {
+    margin: 7px 7px;
+    padding: 30px;
+  }
+
+  >:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    :nth-child(1) {
+      font-weight: 500;
+    }
+
+    :nth-child(2) {
+      font-weight: 300;
+    }
+
+    :nth-child(3) {
+      display: flex;
+      span {
+        font-size: 15px;
+        color: #93A0AB;
+        margin: 0 10px;
+      }
+    }
+  }
+}

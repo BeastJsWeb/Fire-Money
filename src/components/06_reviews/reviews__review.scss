@@ -6,8 +6,13 @@
   text-align: left;
   padding: 40px;
   gap: 15px;
-  margin: 30px 15px;
+  margin: 15px 15px;
   height: 490px;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
 
   @media (max-width: 1025px) {
     margin: 7px 7px;

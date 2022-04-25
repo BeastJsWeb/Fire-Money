@@ -1,51 +1,29 @@
 import React from "react";
 import Calculator from "./calculator";
 import './_calc.scss'
-import bgImg from '../../images/calc/01.webp'
-import bgImgTab from '../../images/calc/01-768.webp'
-import bgImgMob from '../../images/calc/01-360.webp'
+import bgWeb from '../../images/calc/01.webp'
+import bgPreload from '../../images/calc/01preload.webp'
+import bgIE from '../../images/calc/01.jpg'
+import bgTab from '../../images/calc/01-768.webp'
+import bgMob from '../../images/calc/01-360.webp'
 import bgGirl from '../../images/calc/02.webp'
 import iconFire from '../../images/calc/03.webp'
+import { calcData } from "./_data";
+import lozad from 'lozad'
 
-const calcData = [
-  {
-    title: 'Сумма кредита',
-    value: '65 000 ₽',
-    min: '1000 ₽',
-    max: '100 000 ₽'
-  },
-
-  {
-    title: 'Срок кредита',
-    value: '8 дней',
-    min: '3',
-    max: '30'
-  },
-
-  {
-    sum: 'Вы берете',
-    value: '20 000 ₽',
-    backPay: 'Дата возврата',
-    number: '08 января 2022'
-  },
-
-  {
-    sum: 'К возврату',
-    value: '26 650 ₽',
-    backPay: 'Ежемесячный платеж',
-    number: '5650 ₽'
-  },
-]
+const observer = lozad()
+observer.observe()
 
 const Calc = () => {
   return (
     <section id="calc">
  
-      <picture id="calc__bgImg">
-        <source srcSet={bgImgMob} media="(max-width: 400px)" type="image/webp" />
-        <source srcSet={bgImgTab} media="(max-width: 800px)" type="image/webp" />
-        <source srcSet={bgImg} media="(min-width: 801px)" type="image/webp" />
-        <img src={bgImg} width={1920} height={800} alt='bgImg' />
+      <picture id="calc__bgImg"
+      className="lozad" data-iesrc={bgIE} data-alt="bg" >
+        <source srcSet={bgMob} media="(max-width: 400px)" type="image/webp" />
+        <source srcSet={bgTab} media="(max-width: 800px)" type="image/webp" />
+        <source srcSet={bgWeb} media="(min-width: 801px)" type="image/webp" />
+        <img src={bgPreload} width={1920} height={800} alt='bg' />
       </picture>
 
       <div id="calc__text">
