@@ -3,6 +3,10 @@ import "./calculator.scss";
 import GlobalBthOnForm  from '../00_app/GlobalBthOnForm'
 
 const Calculator = ({calcData}) => {
+
+  //const [position, setPosition] = useState(0)
+  //const duration = 200
+
   return (
     <div id="calc__calc">
 
@@ -14,7 +18,13 @@ const Calculator = ({calcData}) => {
 
           <div className="credit__progressBar">
             <span>{value}</span>
-            <div>
+            <div 
+            //step={1}
+            //min={0}
+            //max={duration}
+            //value={position} 
+            //onChange={(_, value) => setPosition(value)}
+            >
               <div></div>
               <button>
                 <span></span>

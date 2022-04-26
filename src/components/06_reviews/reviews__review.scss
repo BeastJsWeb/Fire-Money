@@ -38,10 +38,7 @@
   }
 
   >:nth-child(4) {
-    color: #93A0AB;
-    line-height: 19px;
-    overflow: auto;
-    padding-right: 15px;
+    @include itemText;
   }
 
   >:nth-child(5) {

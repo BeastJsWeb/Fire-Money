@@ -1,0 +1,57 @@
+@import '../00_app/mixin.scss';
+
+#aboutService {
+  @include section(transparent);
+  @include boxStretch;
+  margin-bottom: 70px;
+  margin-top: 50px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  #aboutService__title {
+    @include title;
+    margin-bottom: 40px;
+
+    @media (max-width: 425px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  >:nth-child(2) {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    .aboutService__item {
+      @include section__itemList;
+      flex-direction: column;
+      gap: 30px;
+      padding: 45px;
+      text-align: start;
+      border: 2px solid #F8EBEB;
+
+      @media (max-width: 425px) {
+        padding: 25px;
+      }
+
+      >:nth-child(1) {
+        font-size: 24px;
+        font-weight: 600;
+        max-width: 400px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      >:nth-child(2) {
+        @include itemText;
+      }
+    }
+  }
+}

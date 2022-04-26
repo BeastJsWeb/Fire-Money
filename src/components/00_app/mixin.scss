@@ -64,3 +64,11 @@
   padding-bottom: 15px;
 }
 
+@mixin itemText($color: #536473) {
+  color: $color;
+    line-height: 19px;
+    overflow: auto;
+    padding-right: 15px;
+    font-weight: 300;
+}
+
