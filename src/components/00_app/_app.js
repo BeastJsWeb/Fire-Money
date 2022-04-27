@@ -10,6 +10,8 @@ const Reviews = lazy(() => import("../06_reviews/_reviews"))
 const OurClients = lazy(() => import("../07_ourClients/_ourClients"))
 const AboutService = lazy(() => import("../08_AboutService/_AboutService"))
 const Questions = lazy(() => import("../09_questions/_questions"))
+const GetMoney = lazy(() => import("../10_getMoney/_getMoney"))
+
 
 export default function App() {
   return (
@@ -24,6 +26,7 @@ export default function App() {
       <OurClients />
       <AboutService />
       <Questions />
+      <GetMoney />
     </Suspense>
     </>
   )

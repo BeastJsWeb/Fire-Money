@@ -69,6 +69,8 @@
   
   img {
     vertical-align: top;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;  //IE
   }
   
   h1, h2, h3, h4, h5, h6 {

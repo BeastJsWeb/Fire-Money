@@ -11,10 +11,9 @@
   cursor: pointer;
 
   &:hover {
-    background: rgba(226, 226, 226, 0.9);
+    background: transparent;
     transition: none;
-    
-    box-shadow: 0 0 100px rgba(1, 194, 253, 0.2);
+    box-shadow: 0 0 25px rgba(1, 194, 253, 0.3);
   }
 
   >:nth-child(1) {
@@ -25,6 +24,10 @@
     justify-content: space-between;
     transition: all .2s ease 0s;
     cursor: pointer;
+
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
 
     &::after {
       content: "\276F";
@@ -40,9 +43,15 @@
     display: none;
     max-height: 0;
     @include itemText(black);
+    padding-right: 5%;
     text-align: start;
     font-size: 16px;
     font-weight: 400;
+
+    @media (max-width: 425px) {
+      font-size: 14px;
+      margin-top: 10px;
+    }
   }
 }
 
