@@ -1,9 +1,11 @@
 import React from "react";
+import GlobalBthLogo from "../00_app/GlobalbtnLogo";
+import GlobalNavBtns from "../00_app/globalNavBtns";
 import './_header'
 
 const navBtns = ['Почему мы?', 'О сервисе', 'Вопросы-ответы']
 
-function Header() {
+export default function Header() {
   return (
     <header>
       <div>
@@ -14,19 +16,13 @@ function Header() {
         </label>
 
         <nav className="header__menu">
-          <button id="header__logo" >
-            Fire<span>Money</span>
+          <GlobalBthLogo />
+          <GlobalNavBtns data={navBtns} className='header__navBtn' />
+          <button id="btn__logIn">
+            ВХОД В <span>&#160; ЛИЧНЫЙ &#160;</span>КАБИНЕТ
           </button>
-          <div>
-            {navBtns.map(btn => (
-              <button className="header__navBtn" key={btn} >{btn}</button>
-            ))}
-          </div>
-          <button id="btn__logIn">ВХОД В <span>&#160; ЛИЧНЫЙ &#160;</span>КАБИНЕТ</button>
         </nav>
-
       </div>
     </header>
   )
 }
-export default Header;

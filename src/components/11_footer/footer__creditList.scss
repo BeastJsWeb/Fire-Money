@@ -1,0 +1,17 @@
+@import '../00_app/mixin.scss';
+
+#footer__creditList {
+  padding: 35px 0;
+  
+  >:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+  >:nth-child(2) {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+  }
+}

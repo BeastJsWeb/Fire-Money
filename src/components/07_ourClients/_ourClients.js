@@ -18,16 +18,16 @@ observer.observe()
 export default function OurClients() {
   //const random = Math.floor(Math.random() * (10000 - 1000 + 1) + 1000)
   //const go = setRandomInterval(() => true, 1000, 10000)
-  const [speed, setSpeed] = useState(2000)
+  const [speed, setSpeed] = useState(3000)
   
   useEffect(() => {
     setInterval(() => setSpeed(
-      Math.floor(Math.random() * (6000 - 1000 + 1)) + 1000
+      Math.floor(Math.random() * (6000 - 1000 + 1)) + 1500
     ), 5000)
 
     return () => { 
       setInterval(() => setSpeed(
-        Math.floor(Math.random() * (6000 - 1000 + 1)) + 1000
+        Math.floor(Math.random() * (6000 - 1000 + 1)) + 1500
       ), 5000) 
     }
   }, [])

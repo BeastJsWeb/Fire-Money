@@ -10,11 +10,11 @@
     max-height: 140px;
     min-height: 100px;
     flex: 1 1 auto;
-    
     flex-direction: column;
     align-items:center;
     gap: 10px;
     padding: 30px;
+    box-shadow: 0 0 25px rgba(1, 194, 253, 0.2);
 
     @media (max-width: 769px) {
       zoom: 0.8;
@@ -26,6 +26,7 @@
 
     img {
       width: auto;
+      image-rendering: auto;
     }
 
     .list__arrow {

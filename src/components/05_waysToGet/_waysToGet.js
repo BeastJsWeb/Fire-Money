@@ -13,7 +13,7 @@ export default function WaysToGet() {
           На карту  QIWI  Yandex Деньги  Наличные
         </div>
 
-        <div id="WaysToGet__list">
+        <section id="WaysToGet__list">
           {waysToGet.map(item => (
             <div key={item.toString()} >
               <img src={item} width={90} height={50} alt='wayLogo' />
@@ -22,7 +22,7 @@ export default function WaysToGet() {
               </div>
             </div>
           ))}
-        </div>
+        </section>
           
         <GlobalBthOnForm />
       </div>

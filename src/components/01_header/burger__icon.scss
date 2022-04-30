@@ -1,4 +1,5 @@
 .burger--icon {
+
   @media (max-width: 720px) {
   // Отображение пунктов навигации в виде линий, составляющих иконку гамбургера
     .header__navBtn {
@@ -13,6 +14,8 @@
       text-transform: uppercase;
       white-space: nowrap;
       transform: scaleY(0.2);
+      transition: all 0.5s;
+      overflow: hidden;
       
       // Добавление ширины для первой линии
       &:nth-child(1) {

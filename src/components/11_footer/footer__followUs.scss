@@ -1,0 +1,92 @@
+@import '../00_app/mixin.scss';
+
+#Foooter__followUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(#45515F, 0.5);
+  padding: 20px 0;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  >:nth-child(1) {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      max-width: 270px;
+      text-align: center;
+    }
+  }
+
+  #footer__media {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 350px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    >:nth-child(1) {
+      @include btnMenu;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 12px 30px;
+      transition: background 1s;
+      border: 1px solid #45515F;
+
+      &:hover {
+        border: 1px solid #000000;
+      }
+    }
+
+    >:nth-child(2) {
+      cursor: pointer;
+      display: flex;
+      overflow: hidden;
+
+      * {
+        fill: #45515F;
+      }
+
+      >:nth-child(1) {
+        padding: 8px 20px;
+
+        &:hover * {
+          fill: #000000;
+        }
+      }
+      >:nth-child(2) {
+        border-right: 1px solid rgba(#45515F, 0.5);
+        border-left: 1px solid rgba(#45515F, 0.5);
+        padding: 8px 20px;
+
+        &:hover * {
+          fill: #000000;
+        }
+      }
+
+      >:nth-child(3) {
+        padding: 8px 20px;
+        padding-right: 0;
+
+        @media (max-width: 350px) {
+          flex-direction: column;
+          padding-right: 20px;
+        }
+
+        &:hover * {
+          fill: #000000;
+        }
+      }
+    }
+  }
+}

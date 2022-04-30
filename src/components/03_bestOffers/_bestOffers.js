@@ -9,12 +9,12 @@ const BestOffers = () => {
       <div>
         <div id='bestOffers__title'>Лучшие предложения</div>
 
-        <div id="bestOffers__list">
+        <section id="bestOffers__list">
           {offers.map(item => (
             <ListItem {...item} key={item.grade} />
           ))}
 
-        </div>
+        </section>
 
         <div id="bestOffers__info">
           * Расчёт не является публичное офертой и может 

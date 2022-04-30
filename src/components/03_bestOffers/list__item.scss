@@ -1,11 +1,20 @@
 .list__item {
   @include section__itemList;
+  @include btnMenu;
   width: 33.33%;
   padding: 15px 0 35px 0;
   text-align: start;
   justify-content: center;
-  box-shadow: inset 0 0 5px orange;
+  box-shadow: inset 0 0 4px rgba(1, 194, 253, 0.2);
   overflow: hidden;
+
+  &:hover {
+    border-radius: 22px;
+
+    .item__grade {
+      color:black;
+    }
+  }
 
   @media (max-width: 1200px) {
     max-width: 425px;

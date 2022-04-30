@@ -1,6 +1,6 @@
 import React from "react";
-import Calculator from "./calculator";
 import './_calc.scss'
+import Calculator from "./calculator";
 import bgWeb from '../../images/calc/01.webp'
 import bgPreload from '../../images/calc/01preload.webp'
 import bgIE from '../../images/calc/01.jpg'
@@ -17,7 +17,6 @@ observer.observe()
 const Calc = () => {
   return (
     <section id="calc">
- 
       <picture id="calc__bgImg"
       className="lozad" data-iesrc={bgIE} data-alt="bg" >
         <source srcSet={bgMob} media="(max-width: 400px)" type="image/webp" />
@@ -26,7 +25,7 @@ const Calc = () => {
         <img src={bgPreload} width={1920} height={800} alt='bg' />
       </picture>
 
-      <div id="calc__text">
+      <section id="calc__text">
         <div>
           <img src={iconFire} width={45} height={55} alt='iconFire' />
           ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</div>
@@ -34,7 +33,7 @@ const Calc = () => {
         <div>Без проверки кредитной истории. От 1 000 ₽ за 15 минут.</div>
         <div>Внимание! Услуга обработки заявки платная 
         и составляет от 98 ₽ до 398 ₽ раз в неделю</div>
-      </div>
+      </section>
 
       <div>
         <picture id="calc__bgGirl">
@@ -42,9 +41,8 @@ const Calc = () => {
           <img src={bgGirl} width={525} height={760} alt='bgImg' />
         </picture>
 
-        <Calculator calcData={calcData}/>
+        <Calculator calcData={calcData} />
       </div>
-      
     </section>
   )
 }

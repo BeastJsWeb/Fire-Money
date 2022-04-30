@@ -1,0 +1,43 @@
+@import './calc-Mixin.scss';
+
+#calc__text {
+  flex: 2;
+  color: #45515F;
+
+  @media (max-width: 1440px) {
+    margin: 2.6vw 0;
+  }
+  
+  div {
+    max-width: 20em;
+    margin: 0.5em 0;
+
+    @media (max-width: 1440px) {
+      display: flex;
+      max-width: none;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  :nth-child(1) {
+    @include calc--title1
+  }
+
+  :nth-child(2) {
+    @include calc--title2
+  }
+
+  :nth-child(3) {
+    @include calc--title3
+  }
+
+  :nth-child(4) {
+    @include calc--title4;
+    margin: 7.5em 0;
+
+    @media (max-width: 1440px) {
+      margin: 3.2vw 13vw;
+    }
+  }
+}

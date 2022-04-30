@@ -11,10 +11,10 @@ export default function AboutService() {
 
       <div>
         {data.map(({title, text}) => (
-          <div className='aboutService__item' key={title} >
+          <article className='aboutService__item' key={title} >
             <div>{title}</div>
             <div>{text}</div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

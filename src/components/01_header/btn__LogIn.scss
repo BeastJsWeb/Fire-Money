@@ -5,9 +5,25 @@
   display: flex;
   box-shadow: 0 0 20px firebrick;
 
+  & * {
+    transition: 0.5s, opacity 0.1s;
+  }
+
   @media (max-width: 800px) {
     span {
       display: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 15px rgba(255,255,255, 1);
+
+    @media (max-width: 1024px) {
+      box-shadow:none;
     }
   }
 }

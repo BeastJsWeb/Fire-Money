@@ -4,9 +4,7 @@
 
 header {
   margin: 1em 0;
-  & * {
-    transition: 0.5s, opacity 0.1s;
-  }
+  
   @media (max-width: 340px) {
     min-height: 60px;
   }
@@ -30,11 +28,15 @@ header {
     align-items:center;
     justify-content: space-between;
 
+    >:nth-child(1) {
+      &:hover * {
+        clip-path: polygon(50% 63%, 100% 0, 50% 100%, 0 0);
+      }
+    }
+
     button {
       @include btnMenu;
     }
-
-    @import './header__logo.scss';
     
     @import './nav--list.scss';
 

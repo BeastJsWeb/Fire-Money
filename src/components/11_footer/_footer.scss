@@ -1,0 +1,27 @@
+@import '../00_app/mixin.scss';
+
+footer {
+  width: 100%;
+  padding-bottom: 20px;
+  position: relative;
+  margin-top: -1px;
+
+  >:nth-child(1) * {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  >:nth-child(2) {
+    @include boxStretch;
+
+    @import './footer__nav/footer__nav.scss';
+
+    @import './footer__creditList.scss';
+
+    @import './footer__payAndData.scss';
+  }
+}

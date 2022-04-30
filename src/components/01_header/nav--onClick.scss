@@ -11,6 +11,10 @@
       background-color: white;
       border-radius: 100%;
 
+      & * {
+        transition: 0.5s, opacity 0.1s;
+      }
+
       .header__navBtn {
         color: #45515F;
         background-color: wheat;
