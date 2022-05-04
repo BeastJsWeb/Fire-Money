@@ -2,26 +2,29 @@ import React from "react";
 import GlobalBthLogo from "../00_app/GlobalbtnLogo";
 import GlobalNavBtns from "../00_app/globalNavBtns";
 import './_header'
-
-const navBtns = ['Почему мы?', 'О сервисе', 'Вопросы-ответы']
+import { navBtns } from "../00_app/data/headerAndFooter";
 
 export default function Header() {
   return (
-    <header>
-      <div>
-        <input id="toggle" type="checkbox"/>
-       
-        <label className="toggle-container" htmlFor="toggle">
-          <span className="button button-toggle"></span>
-        </label>
+    <header id="header">
+      <div className="header__menu">
+        <GlobalBthLogo ancor='#footer' />
+        
+        <nav>
+          <input id="nav--onClick" type="checkbox" />
 
-        <nav className="header__menu">
-          <GlobalBthLogo />
-          <GlobalNavBtns data={navBtns} className='header__navBtn' />
-          <button id="btn__logIn">
-            ВХОД В <span>&#160; ЛИЧНЫЙ &#160;</span>КАБИНЕТ
-          </button>
+          <label htmlFor="nav--onClick" >
+            <div id="nav__icon">
+              <div className='icon__lines'></div>
+            </div>
+          </label>
+
+          <GlobalNavBtns data={navBtns} className='nav__btns' />
         </nav>
+      
+        <button id="btn__logIn">
+          ВХОД В&#160;<span>ЛИЧНЫЙ&#160;</span>КАБИНЕТ
+        </button>
       </div>
     </header>
   )

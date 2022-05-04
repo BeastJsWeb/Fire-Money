@@ -4,20 +4,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Сlient from './ourClients__client'
-import bgWeb from '../../images/нашиКлиенты/01.webp'
-import bgTab from '../../images/нашиКлиенты/01tab.webp'
-import bgMob from '../../images/нашиКлиенты/01mob.webp'
-import bgPreload from '../../images/нашиКлиенты/01preload.webp'
-import bgIE from '../../images/нашиКлиенты/01ie.jpg'
-import { Clients } from './_data'
+import { Clients, MediaClients } from './_data'
 import lozad from 'lozad'
 
+const [bgWeb, bgTab, bgMob, bgPreload, bgIE] = MediaClients
 const observer = lozad()
 observer.observe()
 
 export default function OurClients() {
-  //const random = Math.floor(Math.random() * (10000 - 1000 + 1) + 1000)
-  //const go = setRandomInterval(() => true, 1000, 10000)
   const [speed, setSpeed] = useState(3000)
   
   useEffect(() => {

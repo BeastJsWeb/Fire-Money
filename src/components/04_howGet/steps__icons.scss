@@ -7,7 +7,7 @@
     gap: 70px;
   }
 
-  div {
+  >div {
   width: 25%;
   margin-top: 20px;
   display: flex;
@@ -23,22 +23,23 @@
     gap: 20px;
   }
 
-    .icons__item * {
-      fill: #CFD5DD;
-
-      &:active {
-        fill:  #FFA147;
-      }
-    }
-
-    button {
-      background-color: #dde0e7;
+    >:nth-child(2) {
+      background: #dde0e7;
       min-height: 30px;
       min-width: 30px;
       border-radius: 100%;
       z-index: 1;
       font-size: 16px;
       font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  :first-child {
+    >:nth-child(2) {
+      background: #FFA147;;
     }
   }
 }

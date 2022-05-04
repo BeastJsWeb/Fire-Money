@@ -1,23 +1,19 @@
 import React from 'react'
 import GlobalBthLogo from '../../00_app/GlobalbtnLogo'
+import GlobalNavBtns from '../../00_app/globalNavBtns'
 
-export default function Nav({data}) {
+export default function Nav({data, btns, ancor}) {
   return (
     <section id='footer__nav'>
-      <div id='nav__btns'>
-        {data.slice(3, 6)
-        .map(({btn}) => (
-          <button key={btn} >{btn}</button>
-        ))}
-      </div>
+      <GlobalNavBtns data={btns} id='nav__btns' />
 
       <div id='nav__logoAndContacts'>
-        <GlobalBthLogo />
+        <GlobalBthLogo ancor={ancor} />
         <div>
           {data.slice(6, 8)
           .map(({contact, icon}) => (
             <button key={contact}>
-              <img src={icon} alt='footer__icon' />
+              <img src={icon} width={20} height={20} alt='footer__icon' />
               {contact}
             </button>
           ))}

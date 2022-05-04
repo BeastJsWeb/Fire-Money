@@ -53,3 +53,32 @@ export const ReviewsData = [
     vote: star5
   },
 ]
+
+export const Settings = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 6000,
+  autoplaySpeed: 5000,
+  cssEase: "linear",
+  arrows: false,
+  
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        speed: 1000
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        speed: 300
+      }
+    }
+  ]
+}

@@ -11,14 +11,22 @@ $transition: all .3s;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(1, 194, 253, 0.1);
 
-  &:hover {
-    background: transparent;
+  @media (max-width: 768px) {
     transition: none;
-    box-shadow: 0 0 25px rgba(1, 194, 253, 0.3);
+  }
 
-    >:nth-child(1) {
-      &:after {
-        color: rgba(1, 194, 253, 0.3);
+  @media (min-width: 1024px) {
+    &:hover {
+      background: transparent;
+      transition: none;
+      box-shadow: 0 0 25px rgba(1, 194, 253, 0.3);
+  
+      >:nth-child(1) {
+        &:after {
+          color: rgba(1, 194, 253, 0.3);
+  
+          
+        }
       }
     }
   }
@@ -56,7 +64,6 @@ $transition: all .3s;
     font-size: 16px;
     font-weight: 400;
     overflow: hidden;
-    
     padding: 0 7% 0 35px;
     zoom: 0.01;
 

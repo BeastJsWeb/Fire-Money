@@ -1,3 +1,11 @@
+import bgWeb from '../../images/calc/01.webp'
+import bgPreload from '../../images/calc/01preload.webp'
+import bgIE from '../../images/calc/01.jpg'
+import bgTab from '../../images/calc/01-768.webp'
+import bgMob from '../../images/calc/01-360.webp'
+import bgGirl from '../../images/calc/02.webp'
+import iconFire from '../../images/calc/03.webp'
+
 export const calcData = [
   {
     title: 'Сумма кредита',
@@ -23,4 +31,8 @@ export const calcData = [
     backPay: 'Ежемесячный платеж',
     number: '5650 ₽'
   }
+]
+
+export const mediaData = [
+  bgWeb, bgPreload, bgIE, bgTab, bgMob, bgGirl, iconFire
 ]

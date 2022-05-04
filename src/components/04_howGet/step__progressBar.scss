@@ -3,7 +3,10 @@
   height: 7px;
   border-radius: 8px;
   width: 100%;
-  background-color: #dde0e7;
+  background-image: linear-gradient(to right, 
+    #FFC83E 13%, #dde0e7 13%, 
+    #dde0e7 100%, #FFC83E 100%
+  );
   margin-top: -20px;
 
   @media (max-width: 550px) {
@@ -11,5 +14,9 @@
     height: auto;
     margin-bottom: -20px;
     margin-left: -32px;
+    background-image: linear-gradient(to bottom, 
+      #FFC83E 13%, #dde0e7 13%, 
+      #dde0e7 100%, #FFC83E 100%
+    );
   }
 }

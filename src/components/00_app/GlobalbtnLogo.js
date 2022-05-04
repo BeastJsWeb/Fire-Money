@@ -1,10 +1,10 @@
 import React from 'react'
 import './global.scss'
 
-export default function GlobalBthLogo() {
+export default function GlobalBthLogo({ancor}) {
   return (
-    <button className="global__logo" >
+    <a href={ancor} className="global__logo" >
       Fire<span>Money</span>
-    </button>
+    </a>
   )
 }

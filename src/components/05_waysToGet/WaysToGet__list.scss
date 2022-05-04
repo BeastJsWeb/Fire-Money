@@ -14,7 +14,7 @@
     align-items:center;
     gap: 10px;
     padding: 30px;
-    box-shadow: 0 0 25px rgba(1, 194, 253, 0.2);
+    box-shadow: 0 0 15px rgba(1, 194, 253, 0.3);
 
     @media (max-width: 769px) {
       zoom: 0.8;
@@ -35,10 +35,11 @@
       height: 50px;
       margin: 20px;
       zoom: 0.18;
+      animation: slide 3s linear infinite;
 
       div {
         position: relative;
-        top: 20px;
+        top: 22px;
         width: 90px;
         height: 10px;
         background-color: #AFAFAF;
@@ -70,4 +71,11 @@
       }
     }
   }
+}
+
+@keyframes slide {
+0% { opacity:0; transform: translateX(-7vw); }	
+20% { opacity:1; transform: translateX(0vw); }	
+80% { opacity:1; transform: translateX(0vw); }	
+100% { opacity:0; transform: translateX(4vw); }	
 }

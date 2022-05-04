@@ -2,14 +2,14 @@ import React from 'react'
 import './global.scss'
 
 export default function GlobalNavBtns(
-  {data, className}
+  {data, className, id}
   ) {
   return (
-    <div>
-      {data.map(btn => (
-        <button className={className} key={btn} >
-          {btn}
-        </button>
+    <div id={id} className={className} >
+      {data.map(({name, ancor}) => (
+        <a href={ancor} key={name} >
+          {name}
+        </a>
       ))}
     </div>
   )

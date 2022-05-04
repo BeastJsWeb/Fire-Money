@@ -3,6 +3,12 @@ import icon2 from '../../images/нашиКлиенты/03.svg'
 import icon3 from '../../images/нашиКлиенты/04.svg'
 import locationIcon from '../../images/почемуВыбиратюНас/04.svg'
 
+import bgWeb from '../../images/нашиКлиенты/01.webp'
+import bgTab from '../../images/нашиКлиенты/01tab.webp'
+import bgMob from '../../images/нашиКлиенты/01mob.webp'
+import bgPreload from '../../images/нашиКлиенты/01preload.webp'
+import bgIE from '../../images/нашиКлиенты/01ie.jpg'
+
 export const Clients = [
   {
     name: 'Екатерина Романова', 
@@ -37,3 +43,5 @@ export const Clients = [
     icon: locationIcon,
   },
 ]
+
+export const MediaClients = [bgWeb, bgTab, bgMob, bgPreload, bgIE]

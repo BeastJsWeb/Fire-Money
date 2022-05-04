@@ -5,6 +5,7 @@ import CreditList from './footer__creditList'
 import PayAndData from './footer__payAndData'
 import FollowUs from './footer__followUs'
 import {FooterData, Companys, PayData, Rules, Us} from './_data'
+import {navBtns} from '../00_app/data/headerAndFooter'
 
 const [bgWeb, bgTab, bgMob] = FooterData
 const {CompanysTitle, CompanysList} = Companys
@@ -13,7 +14,7 @@ const {svg18, FollowUsText, FollowUsMedia} = Us
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id='footer'>
       <picture>
         <source srcSet={bgWeb} media="(min-width: 1440px)" />
         <source srcSet={bgTab} media="(min-width: 768px)" />
@@ -22,23 +23,20 @@ export default function Footer() {
       </picture>
 
       <div>
-        <Nav data={FooterData} />
+        <Nav 
+        data={FooterData} btns={navBtns} ancor='#header' />
 
         <CreditList 
-        title={CompanysTitle} 
-        data={CompanysList} />
+        data={CompanysList} title={CompanysTitle} />
 
         <PayAndData 
         data={PayData} />
 
         <CreditList 
-        title={RulesTitle} 
-        data={RulesText} />
+        data={RulesText} title={RulesTitle} />
 
         <FollowUs 
-        icon={svg18} 
-        text={FollowUsText} 
-        data={FollowUsMedia} />
+        data={FollowUsMedia} icon={svg18} text={FollowUsText} />
       </div>
     </footer>
   )

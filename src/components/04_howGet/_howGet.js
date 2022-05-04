@@ -14,8 +14,8 @@ export default function HowGet() {
           <div id='steps__icons'>
             {steps.map(({Step, label}, i) => (
               <div key={label} >
-                <Step className='icons__item' width={65} height={65} />
-                <button>{i + 1}</button>
+                <Step width={65} height={65} />
+                <div>{i + 1}</div>
               </div>
             ))}
           </div>
