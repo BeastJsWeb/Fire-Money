@@ -53,6 +53,9 @@
     max-width: none;
     margin: 0 7vw;
   }
+  @media (max-width: 650px) {
+    
+  }
 }
 
 @mixin calc--title4 {

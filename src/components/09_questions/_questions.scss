@@ -23,6 +23,7 @@
       flex-direction: column;
       text-align: start;
       gap: 5px;
+      will-change: transform;
 
       input {
         position: absolute;

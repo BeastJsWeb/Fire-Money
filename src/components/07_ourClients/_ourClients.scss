@@ -25,6 +25,7 @@
     >:nth-child(2) {
       margin: 0 -15px;
       z-index: 1;
+      will-change: transform;
 
       @media (max-width: 1440px) {
         margin: 0;

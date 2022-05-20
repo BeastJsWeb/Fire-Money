@@ -10,10 +10,13 @@
   margin-bottom: auto;
 
   @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 700px) {
     min-width: 50%;
     width: 95vw;
     max-width: 430px;
-    margin-bottom: 40px;
   }
 
   >div {

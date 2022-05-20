@@ -1,7 +1,7 @@
 import React from 'react'
 import './global.scss'
 
-export default function GlobalNavBtns(
+export default function GlobalNavBtns (
   {data, className, id}
   ) {
   return (
