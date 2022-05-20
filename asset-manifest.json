@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fire-Money/static/css/main.d32c98cd.css",
-    "main.js": "/Fire-Money/static/js/main.6b8c2631.js",
+    "main.css": "/Fire-Money/static/css/main.3df31c8b.css",
+    "main.js": "/Fire-Money/static/js/main.e6867453.js",
     "static/css/457.c9db690a.chunk.css": "/Fire-Money/static/css/457.c9db690a.chunk.css",
     "static/js/457.f86ad563.chunk.js": "/Fire-Money/static/js/457.f86ad563.chunk.js",
     "static/css/419.7ee4e021.chunk.css": "/Fire-Money/static/css/419.7ee4e021.chunk.css",
@@ -57,8 +57,8 @@
     "index.html": "/Fire-Money/index.html",
     "static/media/05.webp": "/Fire-Money/static/media/05.c4716caa4af5fd4e2e10.webp",
     "static/media/01preload.webp": "/Fire-Money/static/media/01preload.3566c78f608c87033d9a.webp",
-    "main.d32c98cd.css.map": "/Fire-Money/static/css/main.d32c98cd.css.map",
-    "main.6b8c2631.js.map": "/Fire-Money/static/js/main.6b8c2631.js.map",
+    "main.3df31c8b.css.map": "/Fire-Money/static/css/main.3df31c8b.css.map",
+    "main.e6867453.js.map": "/Fire-Money/static/js/main.e6867453.js.map",
     "457.c9db690a.chunk.css.map": "/Fire-Money/static/css/457.c9db690a.chunk.css.map",
     "457.f86ad563.chunk.js.map": "/Fire-Money/static/js/457.f86ad563.chunk.js.map",
     "419.7ee4e021.chunk.css.map": "/Fire-Money/static/css/419.7ee4e021.chunk.css.map",
@@ -80,7 +80,7 @@
     "413.263dc45a.chunk.js.map": "/Fire-Money/static/js/413.263dc45a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d32c98cd.css",
-    "static/js/main.6b8c2631.js"
+    "static/css/main.3df31c8b.css",
+    "static/js/main.e6867453.js"
   ]
 }
